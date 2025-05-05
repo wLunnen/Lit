@@ -1,0 +1,37 @@
+Course proposal/lesson plans for mobile dev course
+
+Setup:
+
+REMEMBER TO BRING FLASH DRIVE OR BACKUP WITH ALL FILES ON IT FOR MYSELF AND OTHERS TO USE AS VERSION CONTROL/CATCHUP
+Use JAUNDICE profile as the main work screen for privacy/close to control
+Dual screen (OBS/Rec SW and presentation screen)
+Recording equipment (maybe obs, can use webcam and mic to piece together video)
+
+
+Intro: Howdy. If you have no experience with development in any capacity, this is a great way to get your foot in the door. We'll be going through the development lifecycle of a project together so you have a guide than can answer questions for you as you face the normal issues everyone does as they get started building applications. You're normal, in a weird kind of way. We'll cover that at the meet and greet. I'll address different options you can go with later when you find needs that your current set of tools cannot accomplish. This could be anything, so let's start with a basic phone app that simulates a calculator and then we'll move into a more difficult problem by creating an inventory management system that you could use immediately for insurance purposes if you so chose. You could even make your calculator app a full graphing calculator as a great portfolio piece. Following the 6 week course, you should have 2 separate apps that match the guided projects we'll cover and a plan of what other type of application you'll want to build going forward. Some of you will absolutely not be done with both apps and that is ok. We'll cross that bridge at the debrief week 6. I'll also check in with everyone at the end of class personally to make sure you're getting along alright.
+
+It's as important to pay attention to how we download things like IDE's, VM's, extensions and a lot of other words I'll teach you going forward. It's imperative we get this stuff downloaded before we leave today in case you want to get started. Goal for us is that by the time you leave, you could literally watch a YouTube video on a quick little project and try to figure one out before the next class if you were insane and or a go getter. It can even be useful to get comfortable googling "how do I" blah blah blah since you'll know some terminology and can piece some stuff together without too much difficulty. 
+
+2.6 Billion mobile device users (business analytics as to why this is a lucrative course to be attending)
+
+Ok here we have documentation as far as what it usually takes to make an enterprise level application. We have 6 weeks, so a big thing to think about is scope. What are you trying to accomplish? How long does it take to make that thing? This will all come into play at the end when we put together a plan for your personal apps or the "why" part of your signing up for a course like this. 
+
+Talk about terminology being important to working with others, but it's important to know what you're doing first and then work to communicate that to others more aptly in the event you want to try pursuing a career in this.
+
+It's not required. Nothing is required. This is my approach to learning a new thing and for some people it's brand new so we're going to take our time, do it right, and get through 2 apps in 6 weeks God willing.
+
+Who's ready to download a bunch of stuff and not code for an hour at least?
+
+Do a break/meet and greet
+1) what's your name? best memory you're willing to share, ever.
+2) what was your reason for taking the plunge on this class?
+3) do any of you have any conflicts coming up that I should be aware of? Be thinking about that before we leave
+4) do any of you own or plan to own businesses? 
+
+Focus terms and vernacular for 30-45 and field questions if we have time.
+
+Class 1 baybee (like dunkey says it)
+
+Kotlin
+.NET Maui (multi page)
+React (spa)
