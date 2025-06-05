@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Lit Web</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <h1>Lit Web</h1>
+        <nav>
+            <a href="#" id="home-link">Home</a>
+            <a href="#" id="library-link">Library</a>
+            <a href="#" id="profile-link">Profile</a>
+        </nav>
+        <div id="user-info">
+            <span id="user-role">Guest</span>
+            <button id="login-btn">Login</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="story-form-section" class="hidden">
+            <h2>Post a New Story</h2>
+            <form id="story-form">
+                <input type="text" id="story-title" placeholder="Story Title" required />
+                <textarea id="story-content" placeholder="Write your story..." required></textarea>
+                <button type="submit">Post Story</button>
+            </form>
+        </section>
+
+        <section class="story-feed">
+            <h2>Story Feed</h2>
+            <div id="stories-container">
+                <!-- Stories will be inserted here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Lit Web</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
