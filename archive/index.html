@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story Archive</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Story Archive</h1>
+        <p>Share your short stories with the world!</p>
+    </header>
+
+    <main>
+        <section class="upload-form">
+            <h2>Submit Your Story</h2>
+            <form id="storyForm">
+                <label for="title">Story Title:</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="author">Author Name:</label>
+                <input type="text" id="author" name="author" required>
+
+                <label for="genre">Genre:</label>
+                <select id="genre" name="genre">
+                    <option value="fantasy">Fantasy</option>
+                    <option value="sci-fi">Sci-Fi</option>
+                    <option value="horror">Horror</option>
+                    <option value="romance">Romance</option>
+                    <option value="mystery">Mystery</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="story">Your Story:</label>
+                <textarea id="story" name="story" rows="10" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
