@@ -1,67 +1,36 @@
 body {
     font-family: Arial, sans-serif;
-    background: #f9f9f9;
-    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
 header {
-    background: #ff5500;
+    background-color: #333;
     color: white;
-    padding: 1em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 20px;
 }
 
-nav a {
+.upload-form {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button {
+    background-color: #008CBA;
     color: white;
-    margin: 0 10px;
-    text-decoration: none;
-    font-weight: bold;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
 }
 
-#user-info {
-    display: flex;
-    align-items: center;
-}
-
-#user-info span {
-    margin-right: 10px;
-}
-
-main {
-    padding: 1em;
-}
-
-.story-feed, #story-form-section {
-    margin-bottom: 2em;
-}
-
-.story-card {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: white;
-    border: 1px solid #ccc;
-    padding: 1em;
-    margin-bottom: 1em;
-    border-radius: 8px;
-}
-
-.story-content {
-    max-width: 80%;
-}
-
-.story-actions button {
-    margin-left: 5px;
-}
-
-.hidden {
-    display: none;
-}
-
-footer {
-    background: #eee;
-    padding: 1em;
-    text-align: center;
+button:hover {
+    background-color: #005f73;
 }

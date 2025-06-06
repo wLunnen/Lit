@@ -1,47 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Lit</title>
-    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story Archive</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="https://i.postimg.cc/SR2VXMgw/lit-logo.png">
 </head>
 <body>
     <header>
-        <h1>Lit</h1>
-        <nav>
-            <a href="#" id="home-link">Home</a>
-            <a href="#" id="library-link">Library</a>
-            <a href="#" id="profile-link">Profile</a>
-        </nav>
-        <div id="user-info">
-            <span id="user-role">Guest</span>
-            <button id="login-btn">Login</button>
-        </div>
+        <h1>Story</h1>
+        <p>Share your short stories with the world!</p>
     </header>
 
     <main>
-        <section id="story-form-section" class="hidden">
-            <h2>Post a New Story</h2>
-            <form id="story-form">
-                <input type="text" id="story-title" placeholder="Story Title" required />
-                <textarea id="story-content" placeholder="Write your story..." required></textarea>
-                <button type="submit">Post Story</button>
+        <section class="upload-form">
+            <h2>Submit Your Story</h2>
+            <form id="storyForm">
+                <label for="title">Story Title:</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="author">Author Name:</label>
+                <input type="text" id="author" name="author" required>
+
+                <label for="genre">Genre:</label>
+                <select id="genre" name="genre">
+                    <option value="fantasy">Fantasy</option>
+                    <option value="sci-fi">Sci-Fi</option>
+                    <option value="horror">Horror</option>
+                    <option value="romance">Romance</option>
+                    <option value="mystery">Mystery</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="story">Your Story:</label>
+                <textarea id="story" name="story" rows="10" required></textarea>
+
+                <button type="submit">Submit</button>
             </form>
         </section>
-
-        <section class="story-feed">
-            <h2>Story Feed</h2>
-            <div id="stories-container">
-                <!-- Stories will be inserted here -->
-            </div>
-        </section>
     </main>
-
-    <footer>
-        <p>&copy; 2025 Lit Web</p>
-    </footer>
 
     <script src="script.js"></script>
 </body>
