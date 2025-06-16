@@ -1,46 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Story Archive</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="https://i.postimg.cc/SR2VXMgw/lit-logo.png">
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="audio, archive, music, local, underground, artist, album" />
+  <meta name="description" content="A archive for self-authored novels by me, Thomas Wesley Lunnen III." />
+  <meta name="author" content="Thomas Wesley Lunnen III">
+  
+  <title>Library</title>
+  
+  <link rel="icon" type="image/x-icon" href="https://i.postimg.cc/yN8ZpDvB/wild-logo.png">
+  <!--<link rel="stylesheet" href="styles/_layout.css">-->
+  <!--<link rel="stylesheet" href="styles/styles.css">-->
+  <!--<link rel="stylesheet" href="styles/w3.css">-->
+  <link rel="stylesheet" href="styles/test.css">
+  
+  
 </head>
 <body>
-    <header>
-        <h1>Story</h1>
-        <p>Share your short stories with the world!</p>
-    </header>
+  <header>
+    <!-- Artist Button (left) 
+    <button class="w3-button w3-xlarge w3-left" onclick="openLeftMenu()">
+      &#9776;
+    </button>
+    -->
+    <!-- Left Sidebar 
+    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="leftMenu">
+      <button onclick="closeLeftMenu()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+      <a href="artist.html" class="w3-bar-item w3-button header-button">
+        <img src="https://i.postimg.cc/wj2GDP2d/Profile-Wild.png" alt="Artist Portrait" class="round-button-img">
+      </a>
+    </div>
+    -->
+  
+    <!-- Title (center) -->
+    <div class="header-title">
+      <h1>Wild Wes Productions
+      </br>
+      &copy; 2024-<script type="text/javascript">var year = new Date();document.write(year.getFullYear());</script></h1>
+    </div>
+    
+  
+    <!-- Album Button (right) 
+    <button class="w3-button w3-xlarge w3-right" onclick="openRightMenu()">
+      &#9776;
+    </button>
+    -->
+    <!-- Right Sidebar 
+    <div class="w3-sidebar w3-bar-block w3-card w3-animate-right" style="display:none;right:0;" id="rightMenu">
+      <button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+      <a href="album.html" class="w3-bar-item w3-button header-button">
+        <img src="https://i.postimg.cc/9M68Wjmy/Sample-1313.png" alt="Album Cover" class="round-button-img">
+      </a>
+    </div>
+    -->
+    
+    <!-- Venues (????) Carousel 
+    <div class="carousel-container">
+      <div class="carousel">
+        <!-- <img id="carousel-image" src="https://via.placeholder.com/200" alt="carousel image">
+        <a href="album.html" class="header-button">
+          <img id="carousel-image" src="https://i.postimg.cc/MpDsbBtQ/venue1.png" alt="Album Cover" class="round-button-img">
+          <img id="carousel-image" src="https://i.postimg.cc/fTYqyp95/venue2.png" alt="Album Cover" class="round-button-img">
+          <img id="carousel-image" src="https://i.postimg.cc/MZCrWqvv/venue3.png" alt="Album Cover" class="round-button-img">
+          <img id="carousel-image" src="https://i.postimg.cc/MpxPQ50w/venue4.png" alt="Album Cover" class="round-button-img">
+          <img id="carousel-image" src="https://i.postimg.cc/G23q5m75/venue5.png" alt="Album Cover" class="round-button-img">
+        </a>
+      -->
+    
+      </div>
+    </div>
+    
+    
+  </header>
 
-    <main>
-        <section class="upload-form">
-            <h2>Submit Your Story</h2>
-            <form id="storyForm">
-                <label for="title">Story Title:</label>
-                <input type="text" id="title" name="title" required>
+  <div class="container">
+    
+  <!-- Upload Section -->
+  <div class="upload-section">
+    <h2>Upload Audio Files</h2>
+    <input type="file" id="audio-file" accept="audio/*">
+    <button onclick="uploadAudio()">Upload</button>
+  </div>
+  
+  <!-- NuBoS Section -->
+  <div class="audio-list">
+    <h2>Your Bank of Sound</h2>
+    <ul id="audio-list">
+      <!-- Audio files will be listed here -->
+    </ul>
+  </div>
+  
+  <!-- EsBoS Section -->
+  <div class="master-tracks">
+    <h2>Established Bank Of Sound</h2>
+    <ul id="master-track-list">
+      <!-- Master tracks will be listed here -->
+    </ul>
+  </div>
+  
+  
+  <!-- clear archive -->
+  <button id="self-destruct" onclick="deleteAllAudio()">Delete All Audio Files</button>
 
-                <label for="author">Author Name:</label>
-                <input type="text" id="author" name="author" required>
+    
+  </div>
+   
 
-                <label for="genre">Genre:</label>
-                <select id="genre" name="genre">
-                    <option value="fantasy">Fantasy</option>
-                    <option value="sci-fi">Sci-Fi</option>
-                    <option value="horror">Horror</option>
-                    <option value="romance">Romance</option>
-                    <option value="mystery">Mystery</option>
-                    <option value="other">Other</option>
-                </select>
+  <!-- Footer Section -->
+  <footer class="footer">
+    <!--
+    <a href="https://linktr.ee/quarter.puerto">
+      <img src="https://i.postimg.cc/brFqmSVg/linktree-logo.webp" alt="Linktree">
+    </a>
+    <a href="https://wlunnen.github.io/Archive/">
+      <img src="https://i.postimg.cc/yN8ZpDvB/wild-logo.png" alt="Home">
+    </a>
+    <a href="https://unitedmasters.com/wildwes">
+      <img src="https://i.postimg.cc/Dy3zvVrB/united-masters.png" alt="United Masters">
+    </a>
+    </br>
+    -->
+    <a>
+      <h1>Wild Wes Productions &copy; 2024-<script type="text/javascript">var year = new Date();document.write(year.getFullYear());</script></h1>
+    </a>
+  </footer>
 
-                <label for="story">Your Story:</label>
-                <textarea id="story" name="story" rows="10" required></textarea>
-
-                <button type="submit">Submit</button>
-            </form>
-        </section>
-    </main>
-
-    <script src="script.js"></script>
+  <script src="functions/functions.js"></script>
 </body>
 </html>
