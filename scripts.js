@@ -3,8 +3,8 @@ let audioFiles = [];
 
 // Master tracks placeholder (will be populated from the database)
 let masterTracks = [
-  { name: "Track 1", id: 1 },
-  { name: "Track 2", id: 2 }
+  { name: "Story 1", id: 1 },
+  { name: "Story 2", id: 2 }
 ];
 
 // Upload Audio
